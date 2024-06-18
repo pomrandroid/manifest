@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com/platform" />
+           fetch="https://android.googlesource.com" />
   <remote  name="pomrandroid"
 	  fetch=".." />
   <default revision="refs/tags/android-2.3.7_r1"
