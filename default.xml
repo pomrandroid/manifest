@@ -3,6 +3,8 @@
 
   <remote  name="aosp"
            fetch=".." />
+  <remote  name="pomrandroid"
+	  fetch="https://github.com/pomrandroid" />
   <default revision="refs/tags/android-2.3.7_r1"
            remote="aosp"
            sync-j="4" />
@@ -11,7 +13,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="bionic" name="platform/bionic" />
-  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
+  <project remote="pomrandroid" path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="cts" name="platform/cts" />
@@ -19,7 +21,7 @@
   <project path="development" name="platform/development" />
   <project path="device/common" name="device/common" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" />
-  <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" />
+  <project remote="pomrandroid" path="device/google/accessory/demokit" name="device/google/accessory/demokit" />
   <project path="device/htc/common" name="device/htc/common" />
   <project path="device/htc/passion" name="device/htc/passion" />
   <project path="device/htc/passion-common" name="device/htc/passion-common" />
